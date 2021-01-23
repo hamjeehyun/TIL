@@ -10,6 +10,6 @@
 <br>
 
 
-**내일 읽어볼것**
-[What is the difference between DAO and Repository patterns?](https://stackoverflow.com/questions/8550124/what-is-the-difference-between-dao-and-repository-patterns)
+**내일 읽어볼것**<br>
+[What is the difference between DAO and Repository patterns?](https://stackoverflow.com/questions/8550124/what-is-the-difference-between-dao-and-repository-patterns)<br>
 [What's an Aggregate Root?](https://stackoverflow.com/questions/1958621/whats-an-aggregate-root)
