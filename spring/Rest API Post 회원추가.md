@@ -18,7 +18,7 @@ public ApiResult<JoinResult> getUser(@RequestBody JoinRequest joinRequest) {
 우선 UserController부터 살펴보겠다. `RequestBody`로 `JoinRequest` DTO를 보내주고, `JoinResult`로 return 한다. DTO 구조는 마지막에 살펴보기로 하고 userService로 넘어가겠다. 😎
 
 
-userService.java
+UserService.java
 
 ```java
 @Transactional
@@ -70,8 +70,59 @@ public User insert(User user) {
 
 솔직히 말하자면 여기 코드는 100% 다 이해하지 못했다.😥 우선 `KeyHolder`가 무엇인지 모른다. 또한 `PreparedStatement`의 역할도 모른다. 그냥 따라 적은거라 보면 된다. 😫💦💦 
 
+JoinRequest.java
 
+```java
+public class JoinRequest {
+    private String principal;
 
+    private String credentials;
+
+    protected JoinRequest() {}
+
+    public String getPrincipal() {
+        return principal;
+    }
+
+    public String getCredentials() {
+        return credentials;
+    }
+
+    @Override
+    public String toString() {
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+                .append("principal", principal)
+                .append("credentials", credentials)
+                .toString();
+    }
+}
+
+```
+<br>
+JoinResult.java
+
+```java
+public class JoinResult {
+
+    private final UserDto user;
+
+    public JoinResult(UserDto user) {
+        checkNotNull(user, "user must be provided");
+        this.user = user;
+    }
+
+    public UserDto getUser() {
+        return user;
+    }
+
+    @Override
+    public String toString() {
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+                .append("user", user)
+                .toString();
+    }
+}
+```
 <br>
 <br>
 오늘 공부는 헛으로 한 것 같다. 그래도 스터디 1주차 숙제는 끝이 났다. 그러나 이것들이 전부 내 것이 되었냐고 물어본다면......... <br>
