@@ -1,4 +1,4 @@
-## DTO, VO, ENTITIES, DOMAIN 에 관한 고찰
+## DTO, VO, ENTITY, DOMAIN 에 관한 고찰
 
 
 
