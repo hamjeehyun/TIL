@@ -23,7 +23,7 @@
 
 - 불변 클래스 만들기
 
-  ```
+  ```java
   public final class User {
       private final String username;
       private final String password;
@@ -52,7 +52,7 @@
 
 - 실제 Application에서는 위에 보다 많은 Field가 들어간다. 좀 더 실제적인 클래스는 다음과 같다.
 
-  ```
+  ```java
   public final class User {
       private final String username;
       private final String password;
