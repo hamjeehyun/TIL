@@ -1,6 +1,1 @@
 # Richardson Maturity Model
-
-Level-0: Swamp of POX: Least conforming to REST architecture style. Usually exposes just one URI for the entire application. Uses HTTP POST for all actions, even for data fetch. SOAP or XML-RPC-based applications come under this level. POX stands for Plain Old XML.
-Level-1: Resource-Based Address/URI: These services employ multiple URIs, unlike in Level 0. However, they use only HTTP POST for all operations. Every resource is identifiable by its own unique URI, including nested resources. This resource-based addressing can be considered the starting point for APIs being RESTful.
-Level-2: HTTP Verbs: APIs at this level fully utilize all HTTP commands or verbs such as GET, POST, PUT, and DELETE. The request body doesn’t carry the operation information at this level. The return codes are also properly used so that clients can check for errors.
-Level-3: HyperMedia/HATEOAS: Most mature level that uses HATEOAS (Hypertext As The Engine Of Application State). It's also known as HyperMedia, which basically consists of resource links and forms. Establishing connections between resources becomes easy as they don’t require human intervention and aids client-driven automation.
