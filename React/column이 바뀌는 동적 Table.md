@@ -268,6 +268,6 @@ class Graph extends Component {
 
 [실행화면]
 
-![image-20210315133343780](C:\Users\2075j\AppData\Roaming\Typora\typora-user-images\image-20210315133343780.png)
+![image-20210315133343780](https://github.com/hamjeehyun/TIL/blob/main/image/%EB%8F%99%EC%A0%81%ED%85%8C%EC%9D%B4%EB%B8%94%20%EA%B2%B0%EA%B3%BC.png)
 
 https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/map
